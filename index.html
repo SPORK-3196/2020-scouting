@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Scouting App | FRC #3196</title>
+  <link rel="stylesheet" href="res/style.css">
+</head>
+
+<body>
+  <div id="header" class="full-body">
+
+  </div>
+
+  
+  <div id="game-field" class="full-body">
+    <img id="game-field" src="res/2020-game-field.png" />
+  </div>
+  
+  <div id="prematch" class="scout-page">
+    <h1>Prematch Setup</h1>
+
+    <label>Scouter Name:</label><br/>
+    <input type="Text" name="scouter-name" placeholder="Scouter Name"><br/>
+
+    <label>Team:</label><br/>
+    <input type="number" name="team-number" placeholder="Team #">
+    <select name="team-alliance">
+      <option value="red">Red Alliance</option>
+      <option value="red">Blue Alliance</option>
+    </select>
+    <input type="number" name="station" placeholder="Station"><br/>
+
+    <label>Robot Setup:</label><br/>
+    <textarea name="notes-setup" placeholder="Notes..."></textarea>
+    <p class="hint">Click/Tap on the field to mark the position where the robot was setup to start the match</p>
+  </div>
+
+  <div id="auto" class="scout-page">
+    <h1>Autonomous</h1>
+
+    <label>Initialization line:</label><br/>
+    <input type="radio" name="auto-move" value="yes">Moved off line<br/>
+    <input type="radio" name="auto-move" value="no">Did not move off line<br/>
+
+    <label>Power Cell Scoring:</label><br/>
+    <input type="number" name="auto-high-outer" placeholder="# in outer high goal">
+    <input type="number" name="auto-high-inner" placeholder="# in inner high goal">
+    <input type="number" name="auto-low" placeholder="# in low goal"><br/>
+
+    <label>Notes</label><br/>
+    <textarea name="notes-auto" placeholder="Notes..."></textarea><br/>
+
+    <label>Route Driven:</label>
+    <p class="hint">Draw the approximate autonomous route driven by this robot</p>
+  </div>
+
+  <div id="teleop" class="scout-page">
+    <h1>Teleop</h1>
+
+    <label>Power Cells</label><br/>
+    <table>
+      <tr>
+        <th colspan="1"><p>Pickup</p></td>
+        <th colspan="2"><p>Shoot</p></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="Ground"><br/>
+          <input type="button" value="Feeder">
+        </td>
+        <td>
+          <input type="button" value="High Score"><br/>
+          <input type="button" value="High Miss">
+        </td>
+        <td>
+          <input type="button" value="Low Score"><br/>
+          <input type="button" value="Low Miss">
+        </td>
+      </tr>
+    </table>
+
+    <label>Color Wheel</label><br/>
+    <input type="button" value="Velocity Control">
+    <input type="button" value="Postion Control"><br/>
+
+    <label>Notes</label>
+    <textarea name="notes-auto" placeholder="Notes..."></textarea><br/>
+  </div>
+
+  <div id="postmatch" class="scout-page">
+    <h1>Postmatch</h1>
+
+    <h2>Generator Switch</h2>
+    <label>Robot State:</label><br/>
+    <input type="radio" name="auto-move" value="hang">Climbed<br/>
+    <input type="radio" name="auto-move" value="park">Parked<br/>
+    <input type="radio" name="auto-move" value="none">Neither<br/>
+
+    <label>Switch State:<label><br/>
+    <input type="radio" name="auto-move" value="yes">Balanced
+    <input type="radio" name="auto-move" value="no">Not balanced<br/>
+  </div>
+</body>
+</html>

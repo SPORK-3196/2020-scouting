@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+/* Header bar */
+div#header {
+    height: 2.5em;
+    margin-bottom: .5em;
+
+    background-color: #d32300;
+    position: sticky;
+}
+
+div.full-body {
+    width: 100%;
+}
+
+/*  */
+div#game-field {
+    text-align: center;
+}
+
+div#game-field img {
+    height: 50vh;
+}
+
+/* Form  */
+div.scout-page {
+    float: left;
+    width: 350px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
